@@ -17,6 +17,18 @@ font-size: 128px;
 letter-spacing: 2rem;
 color: var(--blue);
 }
+@media (max-width:1000px) {
+    #zenith{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+font-family: 'JetBrains Mono', monospace;
+font-style: normal;
+font-weight: 800;
+font-size: 75px;
+letter-spacing: 2rem;
+color: var(--blue);
+}
+}
 /*hr{
   position: relative;
   top: 22rem;
@@ -109,16 +121,29 @@ color: var(--blue);
 .team .team_member {
   width: 12%;
   margin: 10px;
+  background: lightgoldenrodyellow;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  padding: 25px;
+}
+@media (max-width:1000px) {
+  .team .team_member {
+  width: 5%;
+  margin: 10px;
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   padding: 25px;
 }
-.team_member img {
-  width: 80px;
 }
-.team_member .img:hover{
-  opacity: 10%;
+.team_member img {
+  width: 150px;
+  filter: grayscale(100%);
+  clip-path: circle();
+}
+.team_member img:hover {
+  filter: grayscale(0%);
+  transition: 0.3s;
 }
 .team .team_member h3 {
   color: #444;
@@ -129,4 +154,5 @@ color: var(--blue);
 }
 .team .team_member p {
   margin: 15px 0;
+  color: #999;
 }
