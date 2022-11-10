@@ -21,7 +21,9 @@ body {
 
 @media (max-width:1000px) {
     #zenith {
-        font-size: 70px;
+        font-size: 4rem;
+        letter-spacing: 1rem;
+        text-align: center;
         padding-right: auto;
         padding-left: auto;
     }
@@ -50,7 +52,6 @@ body {
 
 #header {
     display: flex;
-    gap: 2rem;
 }
 
 .headline {
@@ -76,7 +77,7 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        
+
     }
 
     #headerDesc {
