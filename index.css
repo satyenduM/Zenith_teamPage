@@ -8,7 +8,7 @@ body {
     align-items: center;
 }
 #zenith{
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 font-family: 'JetBrains Mono', monospace;
 font-style: normal;
@@ -17,7 +17,19 @@ font-size: 10rem;
 letter-spacing: 2rem;
 color: var(--blue);
 }
-hr{
+@media (max-width:1000px) {
+    #zenith{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+font-family: 'JetBrains Mono', monospace;
+font-style: normal;
+font-weight: 800;
+font-size: 75px;
+letter-spacing: 2rem;
+color: var(--blue);
+}
+}
+/*hr{
   position: relative;
   top: 22rem;
   border-color: grey;
@@ -26,7 +38,7 @@ hr{
   border-top-style: dotted;
   width: 8%;
   z-index: 10;
-}
+}*/
 #background {
     background: #0a1724;
     background-repeat: no-repeat;
@@ -52,7 +64,7 @@ hr{
     background-clip: text;
 }
 #headerDesc {
-    max-width: 50rem;
+    max-width: 60rem;
     line-height: 1.7rem;
 }
 @media (max-width:1000px) {
@@ -79,7 +91,16 @@ hr{
     background: #0c2538;
     text-align: center;
 }
-.team {
+.projects{
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0c2538;
+}
+.team_list {
     width: 100%;
     padding-top: 5rem;
     padding-bottom: 6rem;
@@ -87,4 +108,51 @@ hr{
     flex-direction: column;
     align-items: center;
     background: #0c2538;
+}
+.team {
+  padding-top: 4rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member {
+  width: 12%;
+  margin: 10px;
+  background: lightgoldenrodyellow;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  padding: 25px;
+}
+@media (max-width:1000px) {
+  .team .team_member {
+  width: 5%;
+  margin: 10px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  padding: 25px;
+}
+}
+.team_member img {
+  width: 150px;
+  filter: grayscale(100%);
+  clip-path: circle();
+}
+.team_member img:hover {
+  filter: grayscale(0%);
+  transition: 0.3s;
+}
+.team .team_member h3 {
+  color: #444;
+}
+.team .team_member span {
+  font-size: 12px;
+  color: #999;
+}
+.team .team_member p {
+  margin: 15px 0;
+  color: #999;
 }
