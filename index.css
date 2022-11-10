@@ -19,15 +19,8 @@ color: var(--blue);
 }
 @media (max-width:1000px) {
     #zenith{
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-font-family: 'JetBrains Mono', monospace;
-font-style: normal;
-font-weight: 800;
-font-size: 100%;
-letter-spacing: 2rem;
-color: var(--blue);
-}
+        font-size: 70px;
+    }
 }
 /*hr{
   position: relative;
