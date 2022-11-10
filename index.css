@@ -67,7 +67,9 @@ body {
 
 #headerDesc {
     max-width: 60rem;
-    line-height: 1.7rem;
+    line-height: 1.8rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 300;
 }
 
 @media (max-width:1000px) {
