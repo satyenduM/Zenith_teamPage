@@ -214,7 +214,7 @@ a:link {
 }
 
 .team_member img {
-    width: 150px;
+    width: 175px;
     filter: grayscale(100%);
     clip-path: circle();
 }
