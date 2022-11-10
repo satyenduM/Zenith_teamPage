@@ -81,6 +81,7 @@ body {
         align-items: center;
         text-align: center;
     }
+
     #headerDesc {
         max-width: unset;
         width: 90vw;
@@ -124,7 +125,7 @@ body {
 
 .project-container {
     text-align: center;
-    width: 21.875rem;
+    width: 24.875rem;
     padding: 1rem;
 }
 
@@ -141,22 +142,27 @@ body {
 }
 
 .projects .project-card h3 {
-    color: #444;
+    color: rgba(255, 255, 255, 0.749);
+    text-align: right;
+    margin-block-start: auto;
+    font-size: 28px;
 }
 
 .projects .project-card p {
     font-size: 16px;
-    color: #0a1724;
+    color: rgba(255, 255, 255, 0.749);
     opacity: 50%;
+    text-align: right;
 }
 
 .project-card {
     background: linear-gradient(180deg, rgba(101, 178, 255, 0.15) 0%, rgba(255, 255, 255, 0.0585) 100%);
     backdrop-filter: blur(25px);
-    cborder-radius: 53px;
+    border-radius: 20px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+    display: flex;
 }
 
 .team_list {
