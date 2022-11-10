@@ -151,8 +151,9 @@ body {
 }
 
 .project-card {
-    background: #ed9d9d;
-    border-radius: 11px;
+    bbackground: linear-gradient(180deg, rgba(101, 178, 255, 0.15) 0%, rgba(255, 255, 255, 0.0585) 100%);
+    backdrop-filter: blur(25px);
+    border-radius: 53px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
